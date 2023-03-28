@@ -8,7 +8,7 @@ branches: [ "main" ]
 #Jobs запускаются параллельно,если не указана последовательность
 jobs:
 #Название Job вы можете назвать как угодно
-my_bulld_job:
+my_build_job:
 # операционная система в виртуальной машине, в которой запускаются процес
 runs-on: ubuntu-latest 
 steps:
@@ -17,7 +17,7 @@ steps:
 #Устанавливаем все необходиные зависимости
 -name: npm install, test and build
 run: | 
-npm Install
+npm install
 npm run test
 npm run build
 #Пример однолинейного простого скрипта shell
